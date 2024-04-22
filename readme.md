@@ -118,8 +118,11 @@ docker-compose up -d
 ```
 
 
+  
+  
 
 
+## *** Caution ***
 ### To remove all Docker images at once without specifying the name or ID of each image
 
 
