@@ -12,6 +12,9 @@ RUN apt-get update \
 
 RUN a2enmod rewrite
 
+RUN curl -sL https://deb.nodesource.com/setup_22.x | bash - \
+    && apt-get install -y nodejs
+
 WORKDIR /var/www
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
